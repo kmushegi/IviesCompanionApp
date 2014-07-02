@@ -12,7 +12,6 @@
 
 @end
 
-
 @implementation DrinkCounterViewController
 
 @synthesize stepper = _stepper;

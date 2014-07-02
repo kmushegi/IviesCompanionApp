@@ -23,11 +23,11 @@
 @property (strong, nonatomic) NSTimer *timer;
 
 @property (weak, nonatomic) IBOutlet UILabel *drinkCounter;
-@property (weak, nonatomic) IBOutlet UIStepper * stepper;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 @property (weak, nonatomic) IBOutlet UILabel *BAC;
 @property (strong, nonatomic) bacActionSheet *bacActionSheet;
-@property (strong, nonatomic) widmarkCalculator* bacCalculator;
-@property (strong, nonatomic) NSDate * beganDrinking;
+@property (strong, nonatomic) widmarkCalculator *bacCalculator;
+@property (strong, nonatomic) NSDate *beganDrinking;
 @property (nonatomic) int weight;
 @property (weak, nonatomic) NSString *gender;
 @property (weak, nonatomic) id <DrinkCounterDelegate> delegate;
@@ -35,9 +35,10 @@
 @property (nonatomic) int timeSinceUserStartedDrinking;
 
 - (void)presentActionSheet;
--(void)clearFields;
+- (void)clearFields;
 - (IBAction)detailsPressed:(UIButton *)sender;
 - (IBAction)incrementedDrinkCounter:(UIStepper *)sender;
 - (void) updateTimer;
+
 @end
 
